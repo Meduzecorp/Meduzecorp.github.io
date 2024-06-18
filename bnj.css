@@ -1,5 +1,14 @@
-div.v{
+div.v {
+  background-color: blue;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+h.v{
+  font-size: 40;
+}
+p.b{
   color:red;
-  font-size:30;
-  background-color:blue;
+  font-size: 3;
 }
