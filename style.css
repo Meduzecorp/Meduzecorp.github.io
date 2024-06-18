@@ -1,0 +1,95 @@
+p.hd{
+  font-size:12;
+  background-color:black;
+  color:green;
+  text-align:center; 
+  border:groove;
+  
+}
+h.s{color:white;}
+h.t{
+    position:fixed;
+  }
+h.cd{color:red;}
+
+div.fin{
+  text-align:center;
+  color:white;
+  }
+body{
+  background-color:black;}
+form.list{
+  background-image:""}
+div.nv {
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+div.host {
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+div.vpn {
+  background-color: red;
+  color: white;
+  border: 2px solid powderblue;
+  margin: 20px;
+  padding: 20px;
+}
+div.des {
+  background-color: yellow;
+  color: white;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+}
+
+div.pg {
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+  margin: 20px;
+  padding: 20px;
+}
+div.dec {
+  background-color: black;
+  color: green;
+  border: 2px solid green;
+  margin: 20px;
+  padding: 20px;
+}
+
+div.ch {
+  background-color: black;
+  color: green;
+  border: 2px solid green;
+  margin: 20px;
+  padding: 20px;
+}
+div.es {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  margin: 20px;
+  padding: 20px;
+}
+div.game {
+  background-color: blue;
+  color: white;
+  border: 2px solid brown;
+  margin: 20px;
+  padding: 20px;
+}
+div.app {
+  background-color: powderblue;
+  color: brown;
+  border: 2px solid red;
+  margin: 20px;
+  padding: 20px;
+}
