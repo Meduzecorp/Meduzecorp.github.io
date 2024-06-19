@@ -1,8 +1,3 @@
-body{
-  background-image: url("bnj.jpg");
-  background-size: cover;
-}
-
 div.v {
   background-color: blue;
   color: white;
@@ -10,10 +5,67 @@ div.v {
   margin: 20px;
   padding: 20px;
 }
+div.btn{
+  border: 2px solid lightblue;
+  background-image: url("bnj.jpg")
+}
+div.ms {
+  text-align: center;
+  background-image: url("bnj2p.jpg");
+  background-size: cover;
+  color: white;
+  border: 3px solid dodgerblue;
+  margin: 2px;
+  padding: 20px;
+}
 h.v{
   font-size: 40;
+}
+p.h{
+  font-size: 20;
+  color: whitesmoke;
+}
+p.r{
+  text-align: center;
+  color: darkred;
+  background-color: whitesmoke;
+  opacity: 0.4;
 }
 p.b{
   color:red;
   font-size: 3;
+}
+div.h{
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  background-color:black;
+}
+button.b1{
+  font: bold;
+  color: whitesmoke;
+  background-color: mediumblue;
+  border: 0.4px dotted skyblue;
+  
+}
+legend{
+  color: white;
+  font: bold;
+  background-image: url("bnj.jpg");
+  border:3px solid whitesmoke;
+  
+}
+fieldset.a{
+  border:3px double ;
+  border-color: skyblue;
+  background-color: midnightblue;
+}
+p.b{
+  color:red;
+  font-size: 3;
+}
+body{
+  background-image: url("bnj.jpg");
+  background-size: cover;
+  
 }
