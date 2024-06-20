@@ -6,10 +6,12 @@ div.v {
   padding: 20px;
 }
 div.btn{
+  height: 0.6cm;
   border: 2px solid lightblue;
   background-image: url("bnj.jpg")
 }
 div.ms {
+  height: 7.6cm;
   text-align: center;
   background-image: url("bnj2p.jpg");
   background-size: cover;
@@ -18,6 +20,18 @@ div.ms {
   margin: 2px;
   padding: 20px;
 }
+div.msc {
+  display: none;
+  height: 7.6cm;
+  text-align: center;
+  background-image: url("me.jpg");
+  background-size: cover;
+  color: white;
+  border: 3px solid dodgerblue;
+  margin: 2px;
+  padding: 20px;
+}
+
 h.v{
   font-size: 40;
 }
@@ -25,22 +39,102 @@ p.h{
   font-size: 20;
   color: whitesmoke;
 }
-p.r{
-  text-align: center;
+h.r{
   color: darkred;
-  background-color: whitesmoke;
-  opacity: 0.4;
 }
 p.b{
   color:red;
   font-size: 3;
 }
-div.h{
-  position: relative;
+p.fin{
   text-align: center;
-  margin: 0px;
+  margin-top: 0px;
+  
+}
+div.haut{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.2cm;
+  text-align: center;
   background-color:black;
 }
+div.vide{
+  text-align: center;
+  height: 0.5cm;
+  color: white;
+  
+}
+div.msg1{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+div.msg2{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+div.msg3{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+div.msg4{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+div.pas{
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 0.4;
+}
+div.txt{
+  text-align: center;
+  height: 1cm;
+  border: 2px solid lightblue;
+  background-image: url("shot_text.jpg");
+  background: cover;
+  bottom: 3cm;
+}
+div.fin{
+  margin-top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 1.2cm;
+  background-image: url(bnj.jpg);
+}
+
 button.b1{
   font: bold;
   color: whitesmoke;
@@ -56,6 +150,7 @@ legend{
   
 }
 fieldset.a{
+  height: 6cm;
   border:3px double ;
   border-color: skyblue;
   background-color: midnightblue;
@@ -64,8 +159,14 @@ p.b{
   color:red;
   font-size: 3;
 }
+img.bnjp{
+  width: 48px;
+}
+img.stext{
+  width: 260px;
+}
+
 body{
   background-image: url("bnj.jpg");
   background-size: cover;
-  
 }
