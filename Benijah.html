@@ -9,57 +9,107 @@
 <script type="text/javascript">
 function ms1() {
     alert("CECI EST UN SITE INTERNET DESTINÉ A STEVEN (ktng) ET BENIJAH(tshmby_wb) Le troisième est un démon 👻")
-  }
+  };
+function swt_ms(){
+  document.getElementById('ms').style.display='none';
+  document.getElementById('msc').style.display='block'
+};
+function swt_ms1(){
+  document.getElementById('ms').style.display='block';
+  document.getElementById('msc').style.display='none'
+}
+function opn1() {
+  document.getElementById('msg1').style.display = 'block';
+};
+function opn2() {
+  document.getElementById('msg2').style.display = 'block';
+};
+function opn3() {
+  document.getElementById('msg3').style.display = 'block';
+};
+function opn4() {
+  document.getElementById('msg4').style.display = 'block';
+};
+
 </script>
 <body>
-  <div class="h">
+  <div class="haut">
   <p class="h">UNIQUEMENT POUR DEUX PERSONNES</h>
   <br>
   <button class="b1" onclick="ms1();"><b>•RIEN N'EXISTE•</b></button>
   </div>
-<marquee behavior="slide" direction"right">
-<p class="r">FAITES RETOUR <br> ET
- PASSEZ VOTRE CHEMIN <br>SI VOUS N'ÊTES PAS BNJ
-</p>
+  <div class="vide">
+    <b>
+    <h1>•</h1>
+    
+    </b>
+  </div>
+<marquee class="pas" behavior="slide" direction"left"><br>
+  <div id="pas" class="pas">
+    <h class="r">FAITES RETOUR <br> ET
+     PASSEZ VOTRE CHEMIN <br>SI VOUS N'ÊTES PAS BNJ
+    </h>
+  </div>
 </marquee>
-<form class="list">
+<form class="form1">
     <fieldset class="a">
       <legend><p>💖BENIJAH💑STEVEN💖</p></legend>
-      <div>
-
-      </div>
     </fielset>
 </form>
 <div class="btn">
-  <marquee behavior="scroll" direction="left"> 
-    <button onclick="myDialog.showModal()">💕💕💕💕💕</button>
-    <button onclick="myDialog1.showModal()">💖💖💖💖💖</button>
-    <button onclick="dialog2.showModal()">💘💘💘💘💘</button>
-    <button onclick="dialog3.showModal()">💝💝💝💝💝</button>
+  <marquee class="btn" behavior="scroll" direction="left"> 
+    <button onclick="opn1()">💕💕💕💕💕</button>
+    <button onclick="opn2()">💖💖💖💖💖</button>
+    <button onclick="opn3()">💘💘💘💘💘</button>
+    <button onclick="opn4()">💝💝💝💝💝</button>
   </marquee>
 </div>
 
-<div class="ms">
+<div onclick="swt_ms()" id="ms" class="ms">
     <h1>J'AIME PAS QUAND TU ES CALME </h1></br>
     <h2>QUAND TU NE DIS RIEN</h2>
     <h4>QUAND TU ES LOIN DE MOI</h4>
 </div>
+<div onclick="swt_ms1()" id="msc" class="msc">
+  <h1>J'AIMERAIS QUE TU TE SENTE TOI-MÊME </h1></br>
+    <h2>QUAND TU ES AVEC MOI</h2>
+    <h4>QUAND TU ME PARLES</h4>
+</div>
+<div class="txt">
+  <img src="shot_text.jpg" class="stext" alt="stext">
+</div>
 
-<dialog id="myDialog">
+<div id="msg1" class="msg1">
   <h1>Je t'aime toi Benijah et toi seule </h1>
   <button onclick="myDialog.close()">OK</button>
-</dialog>
-<dialog id="dialog2">
+</div>
+<div id="msg2" class="msg2">
   <h1>QUELQUE CHOSE ME DIT QUE C'EST PAS REEL</h1>
   <button onclick="dialog2.close()">end</button>
-</dialog>
-<dialog id="dialog3">
+</div>
+<div id="msg3" class="msg3">
   <div class="v">
     <h class="v">JE VEUX UN BISOU</h>
     <p class="b"><b>Sur la bouche<br> pour de vrai</b></p>
     <button onclick="dialog3.close()">OUI</button>
     <button onclick="dialog3.refresh()">NON</button>
   </div>
-</dialog>
+</div>
+<div class="vide">
+    <b>
+    <h2>•</h2>
+    </b>
+</div>
+
+<div class="fin">
+  <p class="fin">
+    <img src="bnj4p_c.jpg" class="bnjp" alt="bic1">
+    <img src="bnjX_c.jpg" class="bnjp" alt="bic2">
+    <img src="bnjY_c.jpg" class="bnjp" alt="bic3">
+    <img src="bnj2p.jpg" class="bnjp" alt="bic1">
+    <img src="bnj7p.jpg" class="bnjp" alt="bic2">
+    <img src="bnj6p_c.jpg" class="bnjp" alt="bnj2p">
+  </p>
+</div>
 </body>
 </html>
