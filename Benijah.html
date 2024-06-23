@@ -7,32 +7,60 @@
 </head>
 <link rel="stylesheet" href="bnj.css">
 <script type="text/javascript">
+
 function ms1() {
     alert("CECI EST UN SITE INTERNET DESTINÉ A STEVEN (ktng) ET BENIJAH(tshmby_wb) Le troisième est un démon 👻")
   };
+
 function swt_ms(){
-  document.getElementById('ms').style.display='none';
-  document.getElementById('msc').style.display='block'
+  var dms = document.getElementById('ms');
+  var dmsc= document.getElementById('msc');
+  if(dmsc.style.display=='none'){
+  dms.style.display='none';
+  dmsc.style.display='block';
+}else{
+  dms.style.display='block';
+  dmsc.style.display='none';}
 };
-function swt_ms1(){
-  document.getElementById('ms').style.display='block';
-  document.getElementById('msc').style.display='none'
-}
 function opn1() {
-  document.getElementById('msg1').style.display = 'block';
-};
+  var msg1 = document.getElementById('msg1');
+  if (msg1.style.display=='none'){
+  msg1.style.display = 'block';
+}else{
+  msg1.style.display='none'};
+}
 function opn2() {
-  document.getElementById('msg2').style.display = 'block';
-};
+  var msg2 = document.getElementById('msg2');
+  if (msg2.style.display=='none'){
+  msg2.style.display = 'block';
+}else{
+  msg2.style.display='none'};
+}
 function opn3() {
-  document.getElementById('msg3').style.display = 'block';
-};
+  var msg3 = document.getElementById('msg3');
+  if (msg3.style.display=='none'){
+  msg3.style.display = 'block';
+}else{
+  msg3.style.display='none'};
+}
 function opn4() {
-  document.getElementById('msg4').style.display = 'block';
+  var msg4 = document.getElementById('msg4');
+  if (msg4.style.display=='none'){
+  msg4.style.display = 'block';
+}else{
+  msg4.style.display='none'};
 };
+function fmeduz(){
+  
+  document.getElementById("meduz").style.display="none";
+};
+function webm(){
+  var Md = document.getElementById('meduz')
+  Md.style.display='block';
+}
 
 </script>
-<body>
+<body class="benijah">
   <div class="haut">
   <p class="h">UNIQUEMENT POUR DEUX PERSONNES</h>
   <br>
@@ -53,27 +81,29 @@ function opn4() {
 </marquee>
 <form class="form1">
     <fieldset class="a">
-      <legend><p>😭BENIJAH💔STEVEN😭</p></legend>
+      <legend class="benijah"><p>💖BENIJAH💑STEVEN💖</p></legend>
     </fielset>
 </form>
+
 <div class="btn">
-  <marquee class="btn" behavior="scroll" direction="left"> 
-    <button onclick="opn1()">💕💕💕💕💕</button>
-    <button onclick="opn2()">💖💖💖💖💖</button>
-    <button onclick="opn3()">💘💘💘💘💘</button>
-    <button onclick="opn4()">💝💝💝💝💝</button>
+  <marquee class="btn" behavior="scroll" direction="left">
+    <button type="button" id="bt1" onclick="opn1()" class="bt1">💕💕💕💕💕</button>
+    <button type="button" id="bt2" onclick="opn2()">💖💖💖💖💖</button>
+    <button type="button" onclick="opn3()">💘💘💘💘💘</button>
+    <button type="button" onclick="opn4()">💝💝💝💝💝</button>
   </marquee>
 </div>
-
+<div class="cnt" id="cnt">
 <div onclick="swt_ms()" id="ms" class="ms">
     <h1>J'AIME PAS QUAND TU ES CALME </h1></br>
     <h2>QUAND TU NE DIS RIEN</h2>
     <h4>QUAND TU ES LOIN DE MOI</h4>
 </div>
-<div onclick="swt_ms1()" id="msc" class="msc">
+<div onclick="swt_ms()" id="msc" class="msc">
   <h1>J'AIMERAIS QUE TU TE SENTE TOI-MÊME </h1></br>
-    <h2>QUAND TU ES AVEC MOI</h2>
+    <h3>QUAND TU ES AVEC MOI</h3>
     <h4>QUAND TU ME PARLES</h4>
+</div>
 </div>
 <div class="txt">
   <img src="shot_text.jpg" class="stext" alt="stext">
@@ -81,18 +111,21 @@ function opn4() {
 
 <div id="msg1" class="msg1">
   <h1>Je t'aime toi Benijah et toi seule </h1>
-  <button onclick="myDialog.close()">OK</button>
+  <button type="button" onclick="opn1()">OK</button>
 </div>
 <div id="msg2" class="msg2">
-  <h1>QUELQUE CHOSE ME DIT QUE C'EST PAS REEL</h1>
-  <button onclick="dialog2.close()">end</button>
+  <h1>JE NE SENS PLUS CETTE RECIPROCITE 😢</h1>
+  <button type="button" onclick="opn2()">FERMER</button>
 </div>
 <div id="msg3" class="msg3">
-  <div class="v">
-    <h class="v">JE VEUX UN BISOU</h>
-    <p class="b"><b>Sur la bouche<br> pour de vrai</b></p>
-    <button onclick="dialog3.close()">OUI</button>
-    <button onclick="dialog3.refresh()">NON</button>
+  <div class="box3">
+    <h class="v">TU AS CHANGE MES</h>
+    <p class="b"><b>MAUVAIS COMPORTEMENTS<br> pour de vrai</b></p>
+    <button type="button" onclick="opn3()">LOVE</button>
+    <button type="button" onclick="opn3()">NOT</button>
+  </div>
+  <div class="msg4" id="msg4">
+    <input type="text">
   </div>
 </div>
 <div class="vide">
@@ -102,14 +135,52 @@ function opn4() {
 </div>
 
 <div class="fin">
-  <p class="fin">
-    
-    <img src="bnjX_c.jpg" class="bnjp" alt="bnjx">
-    <img src="bnjY_c.jpg" class="bnjp" alt="bnjy">
-    <img src="bnj2p.jpg" class="bnjp" alt="bnj2p">
-    
-    <img src="bnj6p_c.jpg" class="bnjp" alt="bnj6p">
-  </p>
+  <div class="bnj">
+    <img src="bnj3p.jpg" class="bnj3p" alt="bnj3p">
+  </div>
+  <div class="mdz" onclick="webm()">
+    <img src="meduze_1.jpg" class="bnj3p" alt="mdz1" onclick="webm()">
+  </div>
 </div>
+
+  <!--partie meduze_corp-->
+<div class="meduz" id="meduz">
+    <div class="hmdz">
+      <p class="pmdz">MEDUZE_CORP</p>
+    </div>
+    <fieldset class="mdz">
+      <legend class="mdz">
+        <b>STEVEN KAT</b>
+      </legend>
+      <div class="photo">
+        <img src="me.jpg" alt="me" class="me">
+      </div>
+      <div class="pbut">
+        <button type="button" class="bt">BIO</button>
+        <button type="button" class="bt">DÉTAILS</button>
+        <button type="button" class="bt">CONTACTS</button>
+      </div>
+    </fieldset>
+    <div class="p2">
+    <div class="term">
+      <p class="hterm">terminal</p>
+      <p class="choix">Nom :</p>
+      <p class="choix">Numéro :</p>
+      <p class="choix">Script :</p>
+      <p class="choix">Message:</p>
+
+     
+    </div>
+    <div class="sais">
+      <p class="hterm">. . . < / ></p>
+      <p class="ss"><input id="nom" placeholder=" </>"  class="ss" type="text"></p>
+      <p class="ss"><input id="number" placeholder=" </>" class="ss" type="number"></p>
+      <p class="ss"><input type="text" placeholder=" </>"  class="ss"></p>
+      <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>"   class="ss"></textarea></p>
+    </div>
+    </div>
+    
+  <button class="mfin" id="mfin" type="button" onclick="fmeduz()">Executer et fermer</button>
+  </div>
 </body>
 </html>
