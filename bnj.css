@@ -1,17 +1,25 @@
-div.v {
-  background-color: blue;
+div.cnt{
+  display: block;
+}
+div.box3 {
+  background-color: skyblue;
+  text-shadow: 2px 1px 3px black;
   color: white;
-  border: 2px solid black;
+  border: 2px solid steelblue;
   margin: 20px;
   padding: 20px;
 }
 div.btn{
+  display: flex;
+  align-items: center;
   height: 0.6cm;
   border: 2px solid lightblue;
   background-image: url("bnj.jpg")
 }
 div.ms {
-  height: 7.6cm;
+  display: block;
+  align-items: center;
+  height: 300px;
   text-align: center;
   background-image: url("bnj2p.jpg");
   background-size: cover;
@@ -21,8 +29,9 @@ div.ms {
   padding: 20px;
 }
 div.msc {
+  align-items: center;
   display: none;
-  height: 7.6cm;
+  height: 300px;
   text-align: center;
   background-image: url("me.jpg");
   background-size: cover;
@@ -31,7 +40,6 @@ div.msc {
   margin: 2px;
   padding: 20px;
 }
-
 h.v{
   font-size: 40;
 }
@@ -40,16 +48,12 @@ p.h{
   color: whitesmoke;
 }
 h.r{
+
   color: darkred;
 }
 p.b{
   color:red;
   font-size: 3;
-}
-p.fin{
-  text-align: center;
-  margin-top: 0px;
-  
 }
 div.haut{
   width: 100%;
@@ -63,55 +67,26 @@ div.haut{
 }
 div.vide{
   text-align: center;
-  height: 0.5cm;
+  height: 0.4cm;
   color: white;
   
 }
-div.msg1{
+div.msg1, div.msg2, div.msg3, div.msg4{
   display: none;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
+  
   transform: translate(-50%, -50%);
-  z-index: 999;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-div.msg2{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-div.msg3{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-div.msg4{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 599;
+  color: floralwhite;
+  background-image: url("bnj.jpg");
+  padding: 10px;
+  box-shadow: 1px 5px 10px darkblue ;
 }
 div.pas{
+  left: 0;
+  font-size: 6pt;
   text-align: center;
   background-color: whitesmoke;
   opacity: 0.4;
@@ -125,6 +100,8 @@ div.txt{
   bottom: 3cm;
 }
 div.fin{
+  display: flex;
+  align-items: center;
   margin-top: 0;
   left: 0;
   right: 0;
@@ -134,7 +111,26 @@ div.fin{
   height: 1.2cm;
   background-image: url(bnj.jpg);
 }
-
+div.mdz{
+  align-items: center;
+  right: 0;
+  flex: 1;
+  font-size: 21;
+  background-image: url("meduze_1.jpg");
+  background: cover;
+}
+div.bnj{
+  align-items: center;
+  left: 0;
+  flex: 1;
+  background-image: url("bnj3p.jpg");
+  background: cover;
+}
+img.bnj3p{
+  border: 0.5px dashed white;
+  height: 1.3cm;
+  width: 120%;
+}
 button.b1{
   font: bold;
   color: whitesmoke;
@@ -142,9 +138,10 @@ button.b1{
   border: 0.4px dotted skyblue;
   
 }
-legend{
+legend.benijah{
+  font-size: 13pt;
+  text-shadow: 2px 2px 4px blue;
   color: white;
-  font: bold;
   background-image: url("bnj.jpg");
   border:3px solid whitesmoke;
   
@@ -159,14 +156,151 @@ p.b{
   color:red;
   font-size: 3;
 }
-img.bnjp{
-  width: 48px;
-}
 img.stext{
   width: 260px;
 }
 
-body{
+body.benijah{
   background-image: url("bnj.jpg");
   background-size: cover;
+}
+
+
+
+
+p.pmdz{
+  font: 2em Arial,bold;
+  color: ghostwhite;
+  margin-top: 1%;
+  text-align: center;
+  text-shadow: 2px 2px 3px blue;
+}
+p.hterm{
+  position: relative;
+  border: 1px solid greenyellow;
+  margin-top: 0;
+}
+legend.mdz{
+  text-shadow: 4px 1px 10px skyblue;
+  border: 4px dotted skyblue;
+  box-shadow: 2px 2px 10px deepskyblue;
+}
+p.choix{
+  text-align: right;
+  text-shadow: 1px 1px 5px ghostwhite;
+  border: 1px solid grey;
+  margin-top: 0;
+}
+input.ss{
+  font-size: 14pt;
+  border :0px solid black;
+  text-shadow: 1px 2px 6px whitesmoke;
+  background-color: transparent;
+  width: 100%;
+  color: skyblue;
+}
+p.ss{
+  align-items: center;
+  color: green;
+  text-align: left;
+  border: 0.4px dashed dimgray;
+  margin-bottom: 0;
+}
+textarea.ss{
+  top: 0;
+  color: aliceblue;
+  background-color: black;
+  text-align: left;
+  border: 0.3px none black;
+  text-shadow: 1px 2px 7px whitesmoke;
+}
+button.mfin{
+  color: greenyellow;
+  font-size: 13pt;
+  text-shadow: 2px 1px 3px darkblue;
+  background-color: dodgerblue;
+  border: 2px solid lightskyblue;
+  border-top: 0.7px double skyblue;
+  border-bottom: 2px solid aliceblue;
+  position: fixed;
+  bottom: 5.1%;
+  right: 5.3%;
+  left: 5.3%;
+}
+div.meduz{
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 2.5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  color: lawngreen;
+  background-color: midnightblue;
+  border: 1px solid skyblue;
+  box-shadow: -1px -10px 100px black;
+}
+div.hmdz{
+  height: 7%;
+  align-items: center;
+  text-align: center;
+  position:fixed;
+  top: 3.2%;
+  left: 6%;
+  right: 6%;
+  background-color: dodgerblue;
+}
+fieldset.mdz{
+  text-align: right;
+  position: relative;
+  top: 8%;
+  border: 2px solid skyblue;
+}
+div.photo{
+  border: 3px solid aliceblue;
+  text-align: center;
+  align-items: center;
+  background-color: dodgerblue;
+  box-shadow: 2px 2px 20px black;
+}
+div.pbut{
+  display: flex;
+}
+div.p2{
+  position: relative;
+  text-align: center;
+  display: flex;
+  border: 2px solid ghostwhite;
+  top: 8%;
+}
+
+div.term{
+  position: relative;
+  background-color: black;
+  flex: 1;
+  border: 1px solid black;
+  
+}
+div.sais{
+  flex: 2;
+  border: 1px solid black;
+  border-left: 0.4px dashed lightgray;
+  background-color: black;
+  
+}
+button.bt{
+  flex: 1;
+  height: 30px;
+  color: greenyellow;
+  background-color: black;
+  text-shadow: 1px 1px 10px whitesmoke;
+  font-size: 13pt;
+  border: 3px solid ghostwhite;
+}
+
+img.me{
+  height: 200px;
+  width: 200px;
+  border: 1px dashed darkblue;
+  box-shadow: 2px 3px 20px whitesmoke;
 }
