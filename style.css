@@ -1,10 +1,5 @@
-p.hd{
-  font-size:12;
-  background-color:black;
-  color:green;
-  text-align:center; 
-  border:groove;
-  
+p.add{
+  opacity: 0.7;
 }
 h.s{color:white;}
 h.t{
@@ -12,19 +7,54 @@ h.t{
   }
 h.cd{color:red;}
 
-div.fin{
-  text-align:center;
+div.haut{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   color:white;
+  height: 4%;
+  background-color: midnightblue;
+  border-bottom: 2px solid whitesmoke;
+  box-shadow: 2px 2px 6px whitesmoke;
   }
-body{
-  background-color:black;}
-form.list{
-  background-image:""}
+div.vide{
+  background-color: blue;
+  height: 0.2cm;
+}
+div.vide2{
+  background-color: none;
+  height: 0.7cm;
+}
+body.meduze{
+  background-image: url("noire_bg.jpg");}
+fieldset.list{
+  background-image:url("meduze_bg.jpg")
+}
+  
+legend.list{
+  
+  height: 1cm;
+  color: greenyellow;
+  border: 3px solid seagreen;
+  background-image: url("noire2.jpg")
+}
+div.enter{
+  border: 2px solid deepskyblue;
+  box-shadow: 2px -2px 6px skyblue;
+  background-color: darkblue;
+  position: absolute;
+  right: 0.4cm;
+  left: 0.5cm;
+  color: white;
+}
+div.divs1{
+  display: none;
+}
 div.nv {
   background-color: green;
   color: white;
   border: 2px solid white;
-  margin: 20px;
   padding: 20px;
 }
 
@@ -32,7 +62,6 @@ div.host {
   background-color: blue;
   color: white;
   border: 2px solid white;
-  margin: 20px;
   padding: 20px;
 }
 div.vpn {
@@ -44,7 +73,7 @@ div.vpn {
 }
 div.des {
   background-color: yellow;
-  color: white;
+  color: darkblue;
   border: 2px solid white;
   margin: 20px;
   padding: 20px;
@@ -54,7 +83,6 @@ div.pg {
   background-color: white;
   color: black;
   border: 2px solid blue;
-  margin: 20px;
   padding: 20px;
 }
 div.dec {
@@ -69,7 +97,6 @@ div.ch {
   background-color: black;
   color: green;
   border: 2px solid green;
-  margin: 20px;
   padding: 20px;
 }
 div.es {
@@ -83,7 +110,6 @@ div.game {
   background-color: blue;
   color: white;
   border: 2px solid brown;
-  margin: 20px;
   padding: 20px;
 }
 div.app {
@@ -92,4 +118,157 @@ div.app {
   border: 2px solid red;
   margin: 20px;
   padding: 20px;
+}
+
+
+div.bar2{
+  position: fixed;
+  width: 100%;
+  bottom: 0cm;
+  left: 0;
+  right: 0;
+  background-color: black;
+  height: 7%;
+}
+img.bar2p{
+  width: 100%;
+}
+
+
+
+p.pmdz{
+  font: 2em Arial,bold;
+  color: ghostwhite;
+  margin-top: 1%;
+  text-align: center;
+  text-shadow: 2px 2px 3px blue;
+}
+p.hterm{
+  position: relative;
+  border: 1px solid greenyellow;
+  margin-top: 0;
+}
+legend.mdz{
+  text-shadow: 4px 1px 10px skyblue;
+  border: 4px dotted skyblue;
+  box-shadow: 2px 2px 10px deepskyblue;
+}
+p.choix{
+  text-align: right;
+  text-shadow: 1px 1px 5px ghostwhite;
+  border: 1px solid grey;
+  margin-top: 0;
+}
+input.ss{
+  font-size: 14pt;
+  border :0px solid black;
+  text-shadow: 1px 2px 6px whitesmoke;
+  background-color: transparent;
+  width: 100%;
+  color: skyblue;
+}
+p.ss{
+  align-items: center;
+  color: green;
+  text-align: left;
+  border: 0.4px dashed dimgray;
+  margin-bottom: 0;
+}
+textarea.ss{
+  top: 0;
+  color: aliceblue;
+  background-color: black;
+  text-align: left;
+  border: 0.3px none black;
+  text-shadow: 1px 2px 7px whitesmoke;
+}
+button.mfin{
+  color: greenyellow;
+  font-size: 13pt;
+  text-shadow: 2px 1px 3px darkblue;
+  background-color: dodgerblue;
+  border: 2px solid lightskyblue;
+  border-top: 0.7px double skyblue;
+  border-bottom: 2px solid aliceblue;
+  position: fixed;
+  bottom: 5.1%;
+  right: 5.3%;
+  left: 5.3%;
+}
+div.meduz{
+  display: block;
+  align-items: center;
+  position: fixed;
+  top: 2.5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  color: lawngreen;
+  background-color: midnightblue;
+  border: 1px solid skyblue;
+  box-shadow: -1px -10px 100px black;
+}
+div.hmdz{
+  height: 7%;
+  align-items: center;
+  text-align: center;
+  position:fixed;
+  top: 3.2%;
+  left: 6%;
+  right: 6%;
+  background-color: dodgerblue;
+}
+fieldset.mdz{
+  text-align: right;
+  position: relative;
+  top: 8%;
+  border: 2px solid skyblue;
+}
+div.photo{
+  border: 3px solid aliceblue;
+  text-align: center;
+  align-items: center;
+  background-color: dodgerblue;
+  box-shadow: 2px 2px 20px black;
+}
+div.pbut{
+  display: flex;
+}
+div.p2{
+  position: relative;
+  text-align: center;
+  display: flex;
+  border: 2px solid ghostwhite;
+  top: 8%;
+}
+
+div.term{
+  position: relative;
+  background-color: black;
+  flex: 1;
+  border: 1px solid black;
+  
+}
+div.sais{
+  flex: 2;
+  border: 1px solid black;
+  border-left: 0.4px dashed lightgray;
+  background-color: black;
+  
+}
+button.bt{
+  flex: 1;
+  height: 30px;
+  color: greenyellow;
+  background-color: black;
+  text-shadow: 1px 1px 10px whitesmoke;
+  font-size: 13pt;
+  border: 3px solid ghostwhite;
+}
+
+img.me{
+  height: 200px;
+  width: 200px;
+  border: 1px dashed darkblue;
+  box-shadow: 2px 3px 20px whitesmoke;
 }
