@@ -190,10 +190,11 @@ button.mfin{
   border: 2px solid lightskyblue;
   border-top: 0.7px double skyblue;
   border-bottom: 2px solid aliceblue;
+  margin-bottom: 3.1%;
   position: fixed;
-  bottom: 5.1%;
-  right: 5.3%;
-  left: 5.3%;
+  bottom: 3.2%;
+  right: 5%;
+  left: 5%;
 }
 div.meduz{
   display: block;
