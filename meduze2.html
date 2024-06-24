@@ -1,44 +1,157 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 </head>
-<link rel="stylesheet" href="style.css">
-<body>
+<title>MeduzeCorp📑</title>
+<link rel="stylesheet" href="style_mdzc.css">
+<script type="text/javascript">
+function opn1(){
+  var dv= document.getElementById('divs1')
+  var ent = document.getElementById('enter')
+  if(dv.style.display == 'none'){
+  dv.style.display = 'block';
+  ent.textContent="OUVERT";
+  ent.style.textAlign='right';
+  ent.style.left='0';
+  ent.style.right='0';
+  ent.style.position='fixed'
+  ent.style.bottom='6.8%';
+  ent.style.top='89%';
+}else{
+  dv.style.display = 'none';
+  ent.textContent='ENTER';
+  ent.style.position='fixed';
+  ent.style.textAlign='left';
+  ent.style.top='13%';
+  ent.style.bottom='83%'
+}}
+function login(){
+  var Nm = document.getElementById('nom');
+  var num = document.getElementById('number');
+  var scrp = document.getElementById('met')
+  if (Nm.value=='Steven' && num.value=="0971471161" && scrp.value=='Login'){
+  var code =prompt('votre code')
+  document.getElementById('meduz').style.display='none';
+}else{
+  alert('Badge non reconnu !!!')
+};
+}
+</script>
+
+<body class="meduze">
+<div id="haut" class="haut">
+  <h>MeduzeCorp a besoin des gens comme vous</h>
+</div>  
+<div class="vide">
+  <h3>•</h3>
+</div>
 
 <form class="list">
-    <fieldset>
-      <legend><p class="hd"><h class="s">$</h> <h class="cd">cd</h> MEDUZE_CORP/HOME_PAGE</p>
+    <fieldset class="list">
+      <legend class="list">
+        <div class="legend">
+        <b><h class="s">$</h> <h class="cd">cd</h> MEDUZE_CORP/HOME_PAGE<br>
+        <h class="s">$</h> <h class="cd">ls</h></b>
+        </div>
       </legend>
- 
-
-      <div class="nv">
-        <h1>NOUVEAUTE</h1>
-        <p>Du nouveau chez MeduzeCorp!</p>
+      <div class="enter" id="enter" onclick="opn1()">
+        <b>ENTER</b>
       </div>
-
-<div class="vpn">
-<h1>VPN</h1></div>
-<div class="host">
-<h1>HOST</h1></div>
-<div class="des">
-<h1>DESIGN</h1></div>
-<div class="pg">
-<h1>PROGRAMMATION</h1></div>
-<div class="dec">
-<h1>DECRIPTAGE<h1></div>
-<div class="ch">
-<h1>CHIFFREMENT</h1></div>
-<div class="es">
-<h1>ESPACE TCHAT</h1></div>
-<div class="nv">
-<h1>NOS APPLICATIONS</h1></div>
-<div class="app">
-<h1>NOS PROGRAMMES DESKTOP</h1></div>
-<div class="game">
-<h1>NOS JEUX VIDEOS</h1></div>
-</fielset>
+    <div id="divs1" class="divs1">
+      <div class="nv">
+        <h2>NOUVEAUTE</h2>
+        <p class="add">Du nouveau chez MeduzeCorp!</p>
+      </div>
+      <div class="vpn">
+        <h2>VPN</h2>
+        <p class="add">Découvrir les VPN gratuits dans votre milieu</p>
+      </div>
+      <div class="host">
+        <h2>HOST</h2>
+        <p class="add">Listes des HOST pour tout VPN</p>
+      </div>
+      <div class="des">
+        <h2>DESIGN</h2>
+        <p class="add">Faites votre commande à un designer professionnel de MeduzeCorp</p>
+      </div>
+      <div class="pg">
+        <h2>PROGRAMMATION</h2>
+        <p class="add">Apprenez à programmer avec un assistant professionnel de MeduzeCorp</p>
+      </div>
+      <div class="dec">
+        <h2>DECRIPTAGE<h2>
+        <p class="add">Dechiffrer et Décrypter les fichiers</p>
+      </div>
+      <div class="ch">
+        <h2>CHIFFREMENT</h2>
+        <p class="add">Chiffrer et Crypter vos fichiers, textes</p>
+      </div>
+      <div class="es">
+        <h2>ESPACE TCHAT</h2>
+        <p class="add">On vous offre un espace de messagerie pour deux utilisateurs</p>
+      </div>
+      <div class="nv">
+        <h2>NOS APPLICATIONS</h2>
+        <p class="add">Utiliser nos applications Android et Desktop</p>
+      </div>
+      <div class="app">
+        <h2>NOS PROGRAMMES DESKTOP</h2>
+        <p class="add">Exploiter la puissance de nos logiciels </p>
+      </div>
+      <div class="game">
+        <h2>NOS JEUX VIDEOS</h2>
+        <p class="add">Détente avec nos jeux vidéos</p>
+      </div>
+    </div>
+    </fielset>
 </form>
+<div class="vide2">
+  <h3>•</h3>
+</div>
 
+<div class="bar2">
+  <img src="bar2.jpg" class="bar2p" alt="bar2p">
+</div>
+
+  <div class="meduz" id="meduz">
+    <div class="hmdz">
+      <p class="pmdz">MEDUZE_CORP</p>
+    </div>
+    <fieldset class="mdz">
+      <legend class="mdz">
+        <b>STEVEN KAT</b>
+      </legend>
+      <div class="photo">
+        <img src="me.jpg" alt="me" class="me">
+      </div>
+      <div class="pbut">
+        <button type="button" class="bt">BIO</button>
+        <button type="button" class="bt">DÉTAILS</button>
+        <button type="button" class="bt">CONTACTS</button>
+      </div>
+    </fieldset>
+    <div class="p2">
+      <div class="term">
+        <p class="hterm">terminal</p>
+        <p class="choix">Nom :</p>
+        <p class="choix">Numéro :</p>
+        <p class="choix">Script :</p>
+        <p class="choix">Message:</p>
+
+
+      </div>
+      <div class="sais">
+        <p class="hterm">. . . < />
+        </p>
+        <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text"></p>
+        <p class="ss"><input id="number" placeholder=" </>" class="ss" type="number"></p>
+        <p class="ss"><input type="text" placeholder=" </>" class="ss" id="met"></p>
+        <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>" class="ss"></textarea></p>
+      </div>
+    </div>
+    <p <button class="mfin" id="mfin" type="button" onclick="login()">Executer et fermer</button></p>
+  </div>
 </body>
-<div class="fin"><h class="t">FIN</h1></div>
 </html>
