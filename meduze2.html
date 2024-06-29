@@ -27,6 +27,52 @@ function opn1(){
   ent.style.top='13%';
   ent.style.bottom='83%'
 }}
+function detail(){
+  var term = document.getElementById('terminal');
+  var ss = document.getElementById('saisie')
+  var conta = document.getElementById('contact');
+  var deta = document.getElementById('detail');
+  var bt =document.getElementById('bdetail');
+  var rbt = document.getElementById('retour');
+  var exbt=document.getElementById('exec');
+  exbt.style.display='none'
+  rbt.style.display='block';
+  term.style.display='none';
+  ss.style.display='none';
+  conta.style.display='none';
+  deta.style.display='block';
+  bt.style.backgroundColor='transparent';
+}
+function contact(){
+  var term = document.getElementById('terminal');
+  var ss = document.getElementById('saisie')
+  var conta = document.getElementById('contact');
+  var det = document.getElementById('detail');
+  var bt =document.getElementById('bcontact')
+  var rbt = document.getElementById('retour');
+  var exbt=document.getElementById('exec');
+  exbt.style.display='none'
+  rbt.style.display='block';
+  term.style.display ='none';
+  ss.style.display='none';
+  det.style.display='none';
+  conta.style.display='block';
+  bt.style.backgroundColor='transparent';
+}
+function retour(){
+  var term = document.getElementById('terminal');
+  var ss = document.getElementById('saisie');
+  var conta = document.getElementById('contact');
+  var deta = document.getElementById('detail');
+  var rbt = document.getElementById('retour');
+  var exbt=document.getElementById('exec');
+  exbt.style.display='block'
+  rbt.style.display='none';
+  term.style.display = 'block';
+  ss.style.display = 'block';
+  conta.style.display = 'none';
+  deta.style.display = 'none';
+}
 function login(){
   var Nm = document.getElementById('nom');
   var num = document.getElementById('number');
@@ -127,22 +173,20 @@ function login(){
         <img src="me.jpg" alt="me" class="me">
       </div>
       <div class="pbut">
-        <button type="button" class="bt">BIO</button>
-        <button type="button" class="bt">DÉTAILS</button>
-        <button type="button" class="bt">CONTACTS</button>
+        <button type="button" class="bt" onclick="bio()" id="bio">BIO</button>
+        <button type="button" class="bt" onclick="detail()" id="bdetail">DÉTAILS</button>
+        <button type="button" class="bt" onclick="contact()" id="bcontact">CONTACTS</button>
       </div>
     </fieldset>
-    <div class="p2">
-      <div class="term">
+    <div class="p2" id="p2">
+      <div class="terminal" id="terminal">
         <p class="hterm">terminal</p>
         <p class="choix">Nom :</p>
         <p class="choix">Numéro :</p>
         <p class="choix">Script :</p>
         <p class="choix">Message:</p>
-
-
       </div>
-      <div class="sais">
+      <div class="saisie" id="saisie">
         <p class="hterm">. . . < />
         </p>
         <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text"></p>
@@ -150,8 +194,22 @@ function login(){
         <p class="ss"><input type="text" placeholder=" </>" class="ss" id="met"></p>
         <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>" class="ss"></textarea></p>
       </div>
-<div class="mfin" onclick="login()">
-    <h>Executer et fermer</h>
+    <div class="detail" id="detail">
+      <p class="det"><b>MEDUZE_CORP est un group de développeurs généralement africains,<br>
+        Créé par Steven Kat 2024, <br>
+        MEDUZE_CORP recrute encore et à <br>
+        surtout besoin du financement pour <br>
+        aller de l'avant</b></p>
+    </div>
+    <div class="contact" id="contact">
+      <p class="cont"><h class="fb"><b>- facebook -</b></h> <br>
+      <h class="wht"><b>- Whatsapp -</b></h> <br>
+      <h class="num"><b>- Numéro de téléphone -</b></h> <br>
+      <h class="git"><b>- Github -</b></h></p>
+    </div>
+<div class="mfin">
+    <h class="exec" id="exec" onclick="login()">Executer et fermer</h>
+    <h class="retour" id="retour" onclick="retour()">retour</h>
 </div>
 </body>
 </html>
