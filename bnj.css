@@ -2,10 +2,10 @@ div.cnt{
   display: block;
 }
 div.box3 {
-  background-color: skyblue;
+  background-image: url(bnj.jpg);
   text-shadow: 2px 1px 3px black;
   color: white;
-  border: 2px solid steelblue;
+  border: 1px double steelblue;
   margin: 20px;
   padding: 20px;
 }
@@ -71,18 +71,40 @@ div.vide{
   color: white;
   
 }
-div.msg1, div.msg2, div.msg3, div.msg4{
+div.msg1, div.msg2, div.msg3{
   display: none;
   position: fixed;
-  top: 40%;
+  top: 45%;
   left: 50%;
-  
   transform: translate(-50%, -50%);
   z-index: 599;
   color: floralwhite;
   background-image: url("bnj.jpg");
   padding: 10px;
   box-shadow: 1px 5px 10px darkblue ;
+}
+div.msg4{ 
+  color: whitesmoke;
+  display: block;
+  position: fixed;
+  width: 85%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 599;
+  color: floralwhite;
+  background-image: url("bnj.jpg");
+  padding: 10px;
+  box-shadow: 1px 5px 10px darkblue ;
+}
+textarea.sms{
+  color: whitesmoke;
+  width: 100%;
+  text-shadow: 0 0px 10px black;
+  font-size: 14pt;
+  font-style: bold;
+  border: 2px double skyblue;
+  background-image: url(bnj.jpg)
 }
 div.pas{
   left: 0;
@@ -297,6 +319,7 @@ button.bt{
   font-size: 13pt;
   border: 3px solid ghostwhite;
 }
+
 img.me{
   height: 200px;
   width: 200px;
