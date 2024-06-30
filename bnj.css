@@ -85,7 +85,7 @@ div.msg1, div.msg2, div.msg3{
 }
 div.msg4{ 
   color: whitesmoke;
-  display: block;
+  display: none;
   position: fixed;
   width: 85%;
   top: 40%;
