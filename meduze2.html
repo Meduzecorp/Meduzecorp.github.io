@@ -73,15 +73,51 @@ function retour(){
   conta.style.display = 'none';
   deta.style.display = 'none';
 }
-function login(){
+function rech(){
+  var Nm = document.getElementById('nom');
+  var pic = document.getElementById('me');
+  var pic0 = document.getElementById('pic0');
+  var leg =document.getElementById('mdz');
+  if(Nm.value=='Steven'){
+    pic.style.display='block';
+    pic0.style.display='none';
+    pic.style.marginLeft='41px';
+    leg.textContent='STEVEN KAT'
+  }else{
+    pic.style.display='none';
+    pic0.style.display='block';
+    pic0.style.marginLeft='41px';
+    leg.textContent='UserMDZ#'
+  }
+}
+function testrc(){
   var Nm = document.getElementById('nom');
   var num = document.getElementById('number');
   var scrp = document.getElementById('met')
+  Nm.value='TesT';
+  num.value='0001';
+  scrp.value='Login';
+}
+function login(){
+  var Nm = document.getElementById('nom');
+  var num = document.getElementById('number');
+  var scrp = document.getElementById('met');
+  var med = document.getElementById('meduz');
+  var photo = document.getElementById('photo')
+  var err = document.getElementById('error')
   if (Nm.value=='Steven' && num.value=="0971471161" && scrp.value=='Login'){
-  var code =prompt('votre code')
-  document.getElementById('meduz').style.display='none';
+  med.style.display='none';
+} else if(num.value=='2024'){med.style.display='none';}else if(Nm.value=='TesT' && num.value=="0001" && scrp.value=='Login'){
+  var code =prompt('Ecrivez "meduze"');
+  if(code=='meduze'){
+    med.style.display='none';
+  }else{
+    return code
+  }
 }else{
-  alert('Badge non reconnu !!!')
+  alert('Badge non reconnu !!!');
+  err.style.display='block';
+  photo.style.display='none';
 };
 }
 </script>
@@ -167,11 +203,26 @@ function login(){
     </div>
     <fieldset class="mdz">
       <legend class="mdz">
-        <b>STEVEN KAT</b>
+        <b id="mdz">$ BADGE_MDZ-C</b>
       </legend>
-      <div class="photo">
-        <img src="me.jpg" alt="me" class="me">
+      <div class="photo" id="photo">
+        <img src="me.jpg" id="me" alt="me" class="me">
+        <img src="pic0.jpg" id="pic0" alt="pic0" class="pic0">
       </div>
+       <div class="error" onclick="testrc()" id="error">
+      <marquee behavior="slide" direction="right">
+        <p class="error"><b>
+          Utilisez les paramètres <br>
+          Meduz_Test pour continuer <br>
+          appuie ICI</b>
+        </p>
+      </marquee>
+      <marquee behavior="slide" direction="left">
+        <p class="error2">
+          UNIQUEMENT <br>POUR <br>TESTER
+        </p>
+      </marquee>
+       </div>
       <div class="pbut">
         <button type="button" class="bt" onclick="bio()" id="bio">BIO</button>
         <button type="button" class="bt" onclick="detail()" id="bdetail">DÉTAILS</button>
@@ -189,7 +240,7 @@ function login(){
       <div class="saisie" id="saisie">
         <p class="hterm">. . . < />
         </p>
-        <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text"></p>
+        <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text" onchange="rech()"></p>
         <p class="ss"><input id="number" placeholder=" </>" class="ss" type="number"></p>
         <p class="ss"><input type="text" placeholder=" </>" class="ss" id="met"></p>
         <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>" class="ss"></textarea></p>
@@ -207,9 +258,9 @@ function login(){
       <h class="num"><b>- Numéro de téléphone -</b></h> <br>
       <h class="git"><b>- Github -</b></h></p>
     </div>
-<div class="mfin">
+<div class="mfin"><b>
     <h class="exec" id="exec" onclick="login()">Executer et fermer</h>
-    <h class="retour" id="retour" onclick="retour()">retour</h>
+    <h class="retour" id="retour" onclick="retour()">Retour</h></b>
 </div>
 </body>
 </html>
