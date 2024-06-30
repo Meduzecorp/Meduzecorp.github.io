@@ -203,8 +203,8 @@ div.mfin{
   right: 5%;
 }
 div.meduz{
-  align-items: center;
   display: block;
+  text-align: center;
   align-items: center;
   position: fixed;
   top: 2.5%;
@@ -234,11 +234,39 @@ fieldset.mdz{
   box-shadow: 0px -1px 5px snow;
 }
 div.photo{
-  border: 3px solid aliceblue;
   text-align: center;
+  display: block;
+  border: 3px solid aliceblue;
   align-items: center;
   background-color: dodgerblue;
   box-shadow: 2px 2px 20px black;
+}
+div.error{
+  display: none;
+  background-color: black; 
+  border: 3px double darkred;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  box-shadow: 0 0 15px red;
+}
+p.error{
+  width: 280px;
+  text-align: center;
+  align-items: center;
+  color: darkblue;
+  padding: 0px;
+  line-height: 18px;
+  margin-top: 2px;
+  font-size: 16pt;
+  text-shadow: 0 0 3px lightskyblue;
+}
+p.error2{
+  color: black;
+  margin-top: 16px;
+  font-size: 18pt;
+  padding: 6%;
+  text-shadow: 0 0 6px orangered;
 }
 div.pbut{
   display: flex;
@@ -346,11 +374,15 @@ button.bt{
   font-size: 13pt;
   border: 3px solid ghostwhite;
 }
-img.me{
+img.me, img.pic0{
   height: 200px;
   width: 200px;
   border: 1px dashed darkblue;
   box-shadow: 2px 3px 20px whitesmoke;
+  align-items: center;
+}
+img.me{display: none;
+  
 }
 h.retour{
   display: none;
