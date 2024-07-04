@@ -228,7 +228,7 @@ p.ss{
   border: 0.4px dashed dimgray;
   margin-bottom: 0;
 }
-textarea.ss{
+textarea.sms{
   top: 0;
   color: aliceblue;
   background-color: black;
@@ -319,6 +319,7 @@ button.bt{
   font-size: 13pt;
   border: 3px solid ghostwhite;
 }
+
 img.me{
   height: 200px;
   width: 200px;
