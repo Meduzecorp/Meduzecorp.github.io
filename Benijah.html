@@ -50,20 +50,29 @@ function opn4(){
 }else{
   msg4.style.display='none'};
 };
-function fmeduz(){
-  document.getElementById("meduz").style.display="none";
-};
 function webm(){
-  var Md = document.getElementById('meduz')
-  Md.style.display='block';
+  mdz= window.open('https://meduzecorp.github.io/meduze2.html','MEDUZECORP')
+  mdz.moveto(1,0)
 }
+function accel(){
+  document.getElementById('mq1').setAttribute('scrollamount','12');
+}
+function vol(){
+  var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  var gainNode = audioContext.createGain();
 
+  gainNode.gain.value = 0.5; // Définir le gain à 50% (valeur entre 0 et 1)
+
+// Obtention du gain actuel
+  var volume = gainNode.gain.value;
+  alert('Volume actuel : ' + volume);
+}
 </script>
 <body class="benijah">
   <div class="haut">
   <p class="h">UNIQUEMENT POUR DEUX PERSONNES</h>
   <br>
-  <button class="b1" onclick="ms1();"><b>•RIEN N'EXISTE•</b></button>
+  <button type="button" class="b1" onclick="ms1();"><b>•ELLE ET MOI•</b></button>
   </div>
   <div class="vide">
     <b>
@@ -71,7 +80,7 @@ function webm(){
     
     </b>
   </div>
-<marquee class="pas" behavior="slide" direction"left"><br>
+<marquee class="pas" behavior="slide" direction"left" scrollamount="9" id="mq1"><br>
   <div id="pas" class="pas">
     <h class="r">FAITES RETOUR <br> ET
      PASSEZ VOTRE CHEMIN <br>SI VOUS N'ÊTES PAS BNJ
@@ -80,54 +89,58 @@ function webm(){
 </marquee>
 <form class="form1">
     <fieldset class="a">
-      <legend class="benijah"><p>💖BENIJAH💑STEVEN💖</p></legend>
+      <legend class="benijah" onclick="accel()"><p>💖BENIJAH💑STEVEN💖</p></legend>
     </fielset>
 </form>
 
-<div class="btn">
-  <marquee class="btn" behavior="scroll" direction="left">
-    <button type="button" id="bt1" onclick="opn1()" class="bt1">💕💕💕💕💕</button>
-    <button type="button" id="bt2" onclick="opn2()">💖💖💖💖💖</button>
-    <button type="button" onclick="opn3()">💘💘💘💘💘</button>
-    <button type="button" onclick="opn4()">💝💝💝💝💝</button>
+<div class="btn" onclick="accel()">
+  <marquee class="btn" id="mq2" behavior="alternate" direction="right" scrollamount="02">
+    <button type="button" id="bt1" onclick="opn1()" class="bt">💕💕💕💕💕</button>
+    <button type="button" class="bt" id="bt2" onclick="opn2()">💖💖💖💖💖</button>
+    <button type="button" class="bt" onclick="opn3()">💘💘💘💘💘</button>
+    <button type="button" class="bt" onclick="opn4()">💝💝💝💝💝</button>
   </marquee>
 </div>
 <div class="cnt" id="cnt">
 <div onclick="swt_ms()" id="ms" class="ms">
-    <h1>IL SE PEUT QUE TU NE </h1></br>
-    <h2>PUISSE PLUS ME VOIR</h2>
-    <h4>PENDANT TRÈS LONGTEMPS</h4>
+    <h1>QU'EST-CE QUE </h1></br>
+    <h2>JE TE KIFFE</h2>
+    <h4>ET BIZARREMENT FORT</h4>
 </div>
 <div onclick="swt_ms()" id="msc" class="msc">
-  <h1>MAIS IL YA PERSONNE</h1></br>
-    <h3>POUR TE REMPLACER</h3>
-    <h4>TU ES MON CHOIX <br> -je te trouverai-</h4>
+  <h1>SACHE QU'IL YA PERSONNE</h1></br>
+    <h2>POUR TE REMPLACER</h2>
+    <h3>TU ES MON CHOIX <br> -je te trouverai-</h3>
+    <h4>MA FIRST LADDY</h4>
 </div>
 </div>
+<marquee behavior="slide" direction="up">
 <div class="txt">
   <img src="shot_text.jpg" class="stext" alt="stext">
 </div>
+</marquee>
 
 <div id="msg1" class="msg1">
-  <h1>Je t'aime toi Benijah et toi seule </h1>
-  <button type="button" onclick="opn1()">OK</button>
+  <h1> Benijah <hr> </h1>
+  <h2>MON PETIT COEUR</h2>
+  <button type="button" onclick="opn1()" class="bt">MINE</button>
 </div>
 <div id="msg2" class="msg2">
-  <h1>JE NE T'OUBLIERAI JAMAIS <br>
+  <h1>LEVRES LONGUES <br>
   JE T'AI DANS MON COEUR</h1>
-  <button type="button" onclick="opn2()"><b>BB</b></button>
+  <button type="button" class="bt" onclick="opn2()"><b>AMOR</b></button>
 </div>
 <div id="msg3" class="msg3">
   <div class="box3">
     <h class="v">NOS CHEMINS SONT ÉTROITEMENT</h>
-    <p class="b"><b>LIES<br>ON FINIRA ENSEMBLE</b></p>
-    <button type="button" onclick="opn3()">LOVE💕</button>
-    <button type="button" onclick="opn3()">ForEver💝</button>
+    <p class="v"><b>LIES<br>ON FINIRA ENSEMBLE</b></p>
+    <button type="button" class="bt" onclick="opn3">LOVE💕</button>
+    <button type="button" class="bt" onclick="opn3()">ForEver💝</button>
   </div>
 </div>
 <div class="msg4" id="msg4">
-<textarea name="sms" id="sms" cols="30" rows="10"></textarea>
-  <button type="button" onclick="opn4()">Envoyer et fermer</button>
+  <textarea name="sms" class="sms" id="sms" cols="30" rows="10"></textarea>
+  <button type="button" class="bt" onclick="opn4()">Envoyer et fermer</button>
 </div>
 <div class="vide">
     <b>
@@ -137,51 +150,16 @@ function webm(){
 
 <div class="fin">
   <div class="bnj">
+    <marquee behavior="slide" direction="up">
     <img src="bnj3p.jpg" class="bnj3p" alt="bnj3p">
+    </marquee>
   </div>
   <div class="mdz" onclick="webm()">
+    <marquee behavior="slide" direction="down">
     <img src="meduze_1.jpg" class="bnj3p" alt="mdz1" onclick="webm()">
+    </marquee>
   </div>
 </div>
 
-  <!--partie meduze_corp-->
-<div class="meduz" id="meduz">
-    <div class="hmdz">
-      <p class="pmdz">MEDUZE_CORP</p>
-    </div>
-    <fieldset class="mdz">
-      <legend class="mdz">
-        <b>STEVEN KAT</b>
-      </legend>
-      <div class="photo">
-        <img src="me.jpg" alt="me" class="me">
-      </div>
-      <div class="pbut">
-        <button type="button" class="bt">BIO</button>
-        <button type="button" class="bt">DÉTAILS</button>
-        <button type="button" class="bt">CONTACTS</button>
-      </div>
-    </fieldset>
-    <div class="p2">
-    <div class="term">
-      <p class="hterm">terminal</p>
-      <p class="choix">Nom :</p>
-      <p class="choix">Numéro :</p>
-      <p class="choix">Script :</p>
-      <p class="choix">Message:</p>
-
-     
-    </div>
-    <div class="sais">
-      <p class="hterm">. . . < / ></p>
-      <p class="ss"><input id="nom" placeholder=" </>"  class="ss" type="text"></p>
-      <p class="ss"><input id="number" placeholder=" </>" class="ss" type="number"></p>
-      <p class="ss"><input type="text" placeholder=" </>"  class="ss"></p>
-      <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>"   class="ss"></textarea></p>
-    </div>
-    </div>
-    
-  <button class="mfin" id="mfin" type="button" onclick="fmeduz()">Executer et fermer</button>
-  </div>
 </body>
 </html>
