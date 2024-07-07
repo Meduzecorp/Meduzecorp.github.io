@@ -120,12 +120,28 @@ function login(){
   photo.style.display='none';
 };
 }
+function smenu(){
+  var fmenu= document.getElementById('menu')
+  if(fmenu.style.display=='none'){
+    fmenu.style.display='block'
+  }else{
+    fmenu.style.display='none'
+  };
+}
+function vpn(){
+  var svpn= document.getElementById('formvpn')
+  if (svpn.style.display=='none'){
+    svpn.style.display='block'  
+  }else{
+    svpn.style.display='none'
+  }
+}
 </script>
 
 <body class="meduze">
-<div id="haut" class="haut">
+  <div id="haut" class="haut">
   <h>MeduzeCorp a besoin des gens comme vous</h>
-</div>  
+  </div>  
 <div class="vide">
   <h3>•</h3>
 </div>
@@ -146,7 +162,7 @@ function login(){
         <h2>NOUVEAUTE</h2>
         <p class="add">Du nouveau chez MeduzeCorp!</p>
       </div>
-      <div class="vpn">
+      <div class="vpn" onclick="vpn()">
         <h2>VPN</h2>
         <p class="add">Découvrir les VPN gratuits dans votre milieu</p>
       </div>
@@ -197,7 +213,7 @@ function login(){
   <img src="bar2.jpg" class="bar2p" alt="bar2p">
 </div>
 
-  <div class="meduz" id="meduz">
+<div class="meduz" id="meduz">
     <div class="hmdz">
       <p class="pmdz">MEDUZE_CORP</p>
     </div>
@@ -217,11 +233,11 @@ function login(){
           appuie ICI</b>
         </p>
       </marquee>
-      <marquee behavior="slide" direction="left">
+      
         <p class="error2">
           UNIQUEMENT <br>POUR <br>TESTER
         </p>
-      </marquee>
+     
        </div>
       <div class="pbut">
         <button type="button" class="bt" onclick="bio()" id="bio">BIO</button>
@@ -245,6 +261,7 @@ function login(){
         <p class="ss"><input type="text" placeholder=" </>" class="ss" id="met"></p>
         <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>" class="ss"></textarea></p>
       </div>
+    </div>
     <div class="detail" id="detail">
       <p class="det"><b>MEDUZE_CORP est un group de développeurs généralement africains,<br>
         Créé par Steven Kat 2024, <br>
@@ -258,9 +275,63 @@ function login(){
       <h class="num"><b>- Numéro de téléphone -</b></h> <br>
       <h class="git"><b>- Github -</b></h></p>
     </div>
-<div class="mfin"><b>
+    <div class="mfin"><b>
     <h class="exec" id="exec" onclick="login()">Executer et fermer</h>
     <h class="retour" id="retour" onclick="retour()">Retour</h></b>
 </div>
+  </div>
+
+<div class="formvpn" id="formvpn">
+  <div class="top">
+    <div class="menuh" onclick="smenu()"><p class="terminal" style="background-color: steelblue"><b>CHOIX</b></p></div>
+    <div class="prodh"><p class="terminal" style="background-color: midnightblue"><b>....< /></b></p></div>
+    <div class="actuh"><p class="terminal" style="background-color: darkgreen"><b>Actu</b></p></div>
+  </div>
+  <div class="bas">
+    <p class="rt" onclick="vpn()"><b>↪RETOUR↩</b></p>
+  </div>
+  <div class="vp1">
+        <div class="menu" id="menu" onclick="smenu()"><marquee behavior="slide" direction="right" scrollamount="25"><b>
+          <h>➡ VPN GRT ACTIFS <hr>
+          ➡ VPN GRT A TESTER <hr>
+          ➡ VPN PYT ACTIFS <hr>
+          ➡ AUTRE VPN <hr>
+          •
+          </h></b></marquee>
+        </div>
+        
+        <div class="prod">
+          <b style="font-size: 18pt">[]</b>
+          <div class="disp">
+            <h1>HA TUNNEL PLUS <hr></h1>
+            <p class="dsc">Avec Vodacom, Airtel, Orange et Africel</p>
+          </div>
+          <div class="disp">
+            <h1>SOCKSIP <hr></h1>
+            <p class="dsc">avec Orange et Africel</p>
+          </div>
+          <div class="disp">
+            <h1>LINK LAYER <hr></h1>
+            <p class="dsc">avec Orange et Vodacom</p>
+          </div>
+          <div class="disp">
+            <h1>HTTP CUSTOMER <hr></h1>
+            <p class="dsc">Tous les réseaux</p>
+          </div>
+          <div class="disp">
+            <h1>24 CLAN VPN <hr></h1>
+            <p class="dsc">avec Vodacom</p>
+          </div>
+          <div class="disp">
+            <h1>STARK VPN <hr></h1>
+            <p class="dsc">avec Vodacom</p>
+          </div>
+          <div class="videvp"><b>∆</b></div>
+        </div>
+        <div class="actu">
+        </div>
+      </div>
+</div>
 </body>
+
 </html>
