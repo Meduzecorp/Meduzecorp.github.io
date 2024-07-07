@@ -1,3 +1,6 @@
+body.meduze{
+  display: block;
+  background-image: url("noire_bg.jpg");}
 p.add{
   opacity: 0.7;
 }
@@ -26,8 +29,6 @@ div.vide2{
   background-color: none;
   height: 0.7cm;
 }
-body.meduze{
-  background-image: url("noire_bg.jpg");}
 fieldset.list{
   background-image:url("meduze_bg.jpg")
 }
@@ -138,6 +139,21 @@ img.bar2p{
 
 
 
+div.meduz{
+  display: block;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 2.5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  color: limegreen;
+  background-color: midnightblue;
+  border: 1px solid skyblue;
+  box-shadow: -1px -10px 100px black;
+  overflow: auto
+}
 p.pmdz{
   font: 2em Arial,bold;
   color: ghostwhite;
@@ -202,20 +218,6 @@ div.mfin{
   left: 5%;
   right: 5%;
 }
-div.meduz{
-  display: block;
-  text-align: center;
-  align-items: center;
-  position: fixed;
-  top: 2.5%;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
-  color: limegreen;
-  background-color: midnightblue;
-  border: 1px solid skyblue;
-  box-shadow: -1px -10px 100px black;
-}
 div.hmdz{
   height: 6.5%;
   align-items: center;
@@ -254,7 +256,7 @@ p.error{
   width: 280px;
   text-align: center;
   align-items: center;
-  color: darkblue;
+  color: lightblue;
   padding: 0px;
   line-height: 18px;
   margin-top: 2px;
@@ -386,4 +388,112 @@ img.me{display: none;
 }
 h.retour{
   display: none;
+}
+
+
+
+
+
+
+div.formvpn {
+  display: none;
+  position: fixed;
+  font-size: 13pt;
+  background-color: black;
+  width: 100%;
+  left: 0.0%;
+  right: 0%;
+  bottom: 0;
+  top: 0.2%;
+  overflow: auto;
+  border: 2px solid white;
+}
+div.top{ 
+  font-size: 14pt;
+  color: lightblue;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  top: -0.4%;
+  right: 0.5%;
+  left: 0;
+  height: 4.5%;
+  box-shadow: 0 0 10px white;
+}
+div.bas{
+  background-color: midnightblue;
+  color: lightblue;
+  text-align: center;
+  position: fixed;
+  height: 4.5%;
+  bottom: 0%;
+  right: 0.5%;
+  left: 0;
+  border: 2px double white;
+  box-shadow: 0 0 7px lightgray;
+}
+hr{
+  color: darkred;
+  border: 2px double black;
+  box-shadow: 0 0 4px skyblue
+}
+div.menuh{
+  flex: 1
+}
+div.prodh{
+  flex: 3
+}
+div.actuh{
+  flex: 1
+}
+div.vp1{
+  display: flex;
+  margin-left: -15px
+}
+div.menu{
+  color: lightskyblue;
+  text-shadow: 0 0 4px black;
+  display: none;
+  position: fixed;
+  top: 5.7%;
+  width: 50%;
+  left: 0;
+  border: 2px lightcyan outset;
+  background-image: linear-gradient(to top ,black, steelblue);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 1px 2px 5px lightskyblue;;
+}
+div.prod{
+  text-align: center;
+  flex: 4;
+  border: 1px double darkblue;
+  background-color: #3456;
+  margin-left: 2%
+}
+div.disp{
+  color: white;
+  background-color: #6291;
+  border: 2.5px solid slategray;
+}
+p.dsc{
+  color: skyblue;
+  background-image: linear-gradient(#3291,black)
+}
+p.rt{
+  margin-top: 1%;
+}
+div.actu{
+  text-align: right;
+  flex: 1;
+  border: 0.4px dotted gray;
+}
+p.terminal{
+  margin-top: 4px;
+  align-items: center;
+  border: 2px double white;
+  height: 95%;
+}
+div.videvp{
+  height: 3.5%
 }
