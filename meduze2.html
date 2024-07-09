@@ -226,13 +226,11 @@ function vpn(){
         <img src="pic0.jpg" id="pic0" alt="pic0" class="pic0">
       </div>
        <div class="error" onclick="testrc()" id="error">
-      <marquee behavior="slide" direction="right">
         <p class="error"><b>
           Utilisez les paramètres <br>
           Meduz_Test pour continuer <br>
           appuie ICI</b>
         </p>
-      </marquee>
       
         <p class="error2">
           UNIQUEMENT <br>POUR <br>TESTER
@@ -256,7 +254,7 @@ function vpn(){
       <div class="saisie" id="saisie">
         <p class="hterm">. . . < />
         </p>
-        <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text" onchange="rech()"></p>
+        <p class="ss"><input id="nom" placeholder=" </>" class="ss" type="text" oninput="rech()"></p>
         <p class="ss"><input id="number" placeholder=" </>" class="ss" type="number"></p>
         <p class="ss"><input type="text" placeholder=" </>" class="ss" id="met"></p>
         <p class="ss"><textarea name="" id="" cols="25" rows="2" placeholder=" </>" class="ss"></textarea></p>
