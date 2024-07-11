@@ -1,23 +1,26 @@
 body{
-    background-image: url('formation.jpg');
+    background-image: url('real.jpeg');
     background: cover;
 }
 div.start{
     position: fixed;
-    top: 15%;
-    left: 10%;right: 3%;
+    top: 15%;bottom: 15%;
+    left: 3%;right: 3%;
     display: flex;
     align-items: center;
 }
 div.droite{
     flex: 1;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 div.dicton{
-    background-image: linear-gradient(to bottom, rgb(240, 4, 169), rgba(180, 4, 124, 0.815), transparent );
-    border-left: 1px solid rgb(223, 2, 156) ;
-    border-bottom: 1px solid rgba(0, 81, 255, 0.527) ;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 6px black;
+    background-image: linear-gradient(to bottom, rgb(3, 83, 129), rgba(3, 66, 124, 0.815), transparent );
+    border-left: 2px solid rgb(2, 142, 223) ;
+    border-bottom: 2px solid rgb(2, 82, 255) ;
 
 }
 div.gauche{
@@ -25,38 +28,69 @@ div.gauche{
     align-items: center;
 }
 p.titre{
-    background-image: linear-gradient(to bottom, rgb(230, 4, 162), rgba(247, 19, 175, 0.5), transparent );
-    padding: 6%;
-    border: 2px double rgb(247, 19, 178);
-    border-bottom: 4px solid rgb(247, 52, 188) ;
-    border-left: 4px solid rgb(252, 5, 178) ;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    text-shadow: 0 0 6px rgb(4, 4, 185);
+    color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(3, 132, 250), rgba(3, 128, 250, 0.5), transparent );
+    padding: 3%;
+    border: 2px double rgb(159, 203, 243);
+    border-bottom: 8px solid rgb(3, 93, 177) ;
+    border-left: 6px solid rgb(107, 179, 247) ;
     border-radius: 20% 0% 40% 0%;
 }
 p.pour{
-    background-image: linear-gradient(to bottom, rgb(247, 19, 178), transparent , rgba(247, 19, 175, 0.5) );
-    padding: 6%;
-    border: 2px double rgb(247, 19, 178);
-    border-bottom: 4px solid rgb(156, 4, 111) ;
-    border-right: 4px solid rgb(109, 1, 77) ;
+    background-image: linear-gradient(to bottom, rgb(5, 153, 252), black , rgba(95, 98, 247, 0.5) );
+    padding: 2%;
+    border: 2px double rgb(1, 49, 71);
+    border-bottom: 4px solid rgb(1, 0, 31) ;
+    border-right: 4px solid rgb(1, 0, 31) ;
     border-radius: 20px;
+    text-align: center;
+    
 }
 p.vous{
-    border: 6px outset rgb(247, 19, 178);
+    border: 6px outset rgb(1, 49, 71);
     border-radius: 4px;
-    background-color: black;
-    color: rgb(97, 168, 235);
+    background-color: rgba(0, 0, 0, 0.767);
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
     padding: 4%;
 }
 p.lance{
-    margin-top: 12%;
-    border: 6px outset rgb(202, 4, 143);
+    margin-top: 24%;
+    border: 6px outset rgb(1, 49, 71);
     border-radius: 4px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
-
-    background-color: rgba(248, 5, 175, 0.623);
+    background-color: rgb(248, 5, 5);
     color: rgb(0, 5, 10);
     text-align: center;
-    padding: 4%;
+    padding: 1%;
+}
+b.comme{
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 0 0 2px green;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+p.meduze{
+    position: fixed;
+    left: 1%; right: 1%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: aliceblue;
+    border-bottom: 4px solid rgb(105, 199, 243);
+    font-size: 20pt;
+    text-align: center;
+    font-weight: lighter;
+    text-shadow: 0 0 3px black;
+    border-bottom-width: 6px;
+    border-bottom-right-radius: 90px;
+    padding: 1%;
 }
