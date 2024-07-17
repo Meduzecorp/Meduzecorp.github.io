@@ -1,0 +1,96 @@
+body{
+    background-image: url('look.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.start{
+    background-color: rgba(2, 15, 56, 0.527);
+}
+div.mission , div.analyse , div.deploy , div.creation, div.integ{
+    width: 52%;
+    margin: 2% ;
+    align-items: baseline;
+    border: 2px solid white;
+    border-radius: 0% 20px 0% 0%;
+    animation: bouge 10s ease-in-out infinite;
+}
+div.mission{
+    color: green;
+    font-size: 13pt;
+    background-image: linear-gradient(to bottom, rgb(5, 3, 24), black);
+}
+div.analyse{
+    margin-left: 25%;
+    color: rgb(0, 0, 0);
+    font-size: 13pt;
+    background-image: linear-gradient(to bottom, rgb(2, 98, 243), skyblue);
+}
+div.creation{
+    margin-left: 45%;
+    color: rgb(252, 3, 3);
+    font-size: 13pt;
+    background-image: linear-gradient(to bottom right, rgb(3, 66, 161), rgb(129, 219, 255));
+}
+div.deploy{
+    border: 2px solid white;
+    margin-left: 25%;
+    background-image: linear-gradient(to bottom right, rgb(3, 66, 161), rgb(129, 219, 255),rgb(3, 66, 161));
+}
+div.integ{
+    border: 2px solid white;
+    margin-left: 2%;
+    background-image: linear-gradient(to bottom right, rgb(3, 66, 161), rgb(129, 219, 255),rgb(3, 66, 161), rgb(129, 219, 255));
+}
+div.log{
+    position: fixed;
+    bottom: 0;
+    right: 7%;
+}
+h.log{
+    background-image: linear-gradient(to bottom left, rgb(137, 218, 250), white, skyblue);
+    border: 3px solid rgb(2, 131, 170);
+    border-radius: 10px;
+    padding: 1.8%;
+    margin-left: -2%;
+    font-weight: bold;
+    color: darkblue;
+}
+p.log{
+    width: 110%;
+    padding: 4%;
+    background-image: linear-gradient(to right, rgb(80, 210, 250), rgb(51, 70, 134), white);
+    border: 3px solid rgb(80, 210, 250);
+    border-radius: 12px;
+    align-items: center;
+}
+header{
+    background-image: linear-gradient(to top right, skyblue, white);
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    color: rgb(10, 10, 160);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 17px;
+}
+footer{
+    color: darkblue;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 10pt;
+    background-image: linear-gradient(to left, rgb(2, 131, 170), rgba(2, 131, 170, 0.26), transparent);
+}
+@keyframes bouge {
+    0%{
+        width: 52%;
+    }
+    50%{
+        width: 51%;
+    }
+    100%{
+        width: 52%;
+    }
+}

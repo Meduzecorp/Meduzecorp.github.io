@@ -286,6 +286,19 @@ div.detail{
   align-items: center;
   padding: 10.1%;
 }
+div.contact{
+  left: 5%;
+  right: 5%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  padding: 6%;
+  line-height: 230%;
+}
+div.detail,div.contact{
+  margin-top: -35%;
+}
 p.det{
   display: block;
   position: relative;
@@ -344,16 +357,6 @@ h.fb, h.git, h.num, h.wht{
   font-size: 13pt;
   
 }
-div.contact{
-  display: none;
-  left: 5%;
-  right: 5%;
-  position: absolute;
-  text-align: center;
-  align-items: center;
-  padding: 5%;
-  line-height: 34px;
-}
 div.terminal{
   display: block;
   position: relative;
@@ -408,7 +411,7 @@ div.formvpn {
   overflow: auto;
   border: 2px solid white;
 }
-div.top{ 
+div.top{
   font-size: 14pt;
   color: lightblue;
   text-align: center;
