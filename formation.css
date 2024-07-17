@@ -1,6 +1,8 @@
 body{
     background-image: url('real.jpeg');
-    background: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 div.start{
     position: fixed;
