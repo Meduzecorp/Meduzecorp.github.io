@@ -10,8 +10,7 @@
 
 function ms1() {
     alert("CECI EST UN SITE INTERNET DESTINÉ A STEVEN (ktng) ET BENIJAH(tshmby_wb) Le troisième est un démon 👻")
-  };
-
+  }
 function swt_ms(){
   var dms = document.getElementById('ms');
   var dmsc= document.getElementById('msc');
@@ -54,8 +53,9 @@ function webm(){
   mdz= window.open('https://meduzecorp.github.io/meduze2.html','MEDUZECORP')
   mdz.moveto(1,0)
 }
+
 function accel(){
-  document.getElementById('mq1').setAttribute('scrollamount','12');
+  document.getElementById('mq1').setAttribute('scrollamount','40');
 }
 function vol(){
   var audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -66,6 +66,28 @@ function vol(){
 // Obtention du gain actuel
   var volume = gainNode.gain.value;
   alert('Volume actuel : ' + volume);
+}
+
+const fs = require('fs');
+function send(fichier, contenu) {
+  var fichier = 'https://docs.google.com/document/d/1H5S-M0kZ9Zwm-BGLcxNnh0IDgSLiynfcodtvJQBzO7Y/edit?usp=drivesdk'
+  var contenu = document.getElementById('sms')
+  fs.writeFile(nomFichier, contenu, (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    alert('Envoyer');
+  });
+}
+function galerie(){
+  var gl = document.getElementById('gal');
+  if(gl.style.display=='none'){
+    gl.style.display='block';
+    gl.style.display='flex';
+  }else{
+    gl.style.display='none';
+  };
 }
 </script>
 <body class="benijah">
@@ -95,22 +117,22 @@ function vol(){
 
 <div class="btn" onclick="accel()">
   <marquee class="btn" id="mq2" behavior="alternate" direction="right" scrollamount="02">
-    <button type="button" id="bt1" onclick="opn1()" class="bt">💕💕💕💕💕</button>
-    <button type="button" class="bt" id="bt2" onclick="opn2()">💖💖💖💖💖</button>
-    <button type="button" class="bt" onclick="opn3()">💘💘💘💘💘</button>
-    <button type="button" class="bt" onclick="opn4()">💝💝💝💝💝</button>
+    <button type="button" id="bt1" onclick="opn1()" class="bt1">💕💕💕💕💕</button>
+    <button type="button" class="bt2" id="bt2" onclick="opn2()">💖💖💖💖💖</button>
+    <button type="button" class="bt1" onclick="opn3()">💘💘💘💘💘</button>
+    <button type="button" class="bt1" onclick="opn4()">💝💝💝💝💝</button>
   </marquee>
 </div>
 <div class="cnt" id="cnt">
 <div onclick="swt_ms()" id="ms" class="ms">
-    <h1>QU'EST-CE QUE </h1></br>
-    <h2>JE TE KIFFE</h2>
-    <h4>ET BIZARREMENT FORT</h4>
+    <h1>SI TU VIENS ICI </h><hr>
+    <h2>C'EST QUE RÉELLEMENT</h2><hr>
+    <h4>JE TE MANQUE</h4>
 </div>
 <div onclick="swt_ms()" id="msc" class="msc">
-  <h1>SACHE QU'IL YA PERSONNE</h1></br>
-    <h2>POUR TE REMPLACER</h2>
-    <h3>TU ES MON CHOIX <br> -je te trouverai-</h3>
+  <h1>MA FILLE A MOI</h1><hr>
+    <h2>BIENTÔT JE TE REVIENS</h2>
+    <h3>QU'EST-CE QUE<br> TU ME MANQUE</h3>
     <h4>MA FIRST LADDY</h4>
 </div>
 </div>
@@ -121,26 +143,28 @@ function vol(){
 </marquee>
 
 <div id="msg1" class="msg1">
-  <h1> Benijah <hr> </h1>
+  <h1> BEC <hr> </h1>
   <h2>MON PETIT COEUR</h2>
   <button type="button" onclick="opn1()" class="bt">MINE</button>
 </div>
 <div id="msg2" class="msg2">
-  <h1>LEVRES LONGUES <br>
-  JE T'AI DANS MON COEUR</h1>
-  <button type="button" class="bt" onclick="opn2()"><b>AMOR</b></button>
+  <h1>BIENTÔT TON BAPTÊME <hr>
+  SOIS PLEINE D'ENERGIE <br>
+  Comme ton prof de Mathématiques</h1>
+  <button type="button" class="bt" onclick="opn2()"><b>BEC</b></button>
 </div>
 <div id="msg3" class="msg3">
   <div class="box3">
-    <h class="v">NOS CHEMINS SONT ÉTROITEMENT</h>
-    <p class="v"><b>LIES<br>ON FINIRA ENSEMBLE</b></p>
-    <button type="button" class="bt" onclick="opn3">LOVE💕</button>
+    <h class="v">J'ARRÊTE PAS DE MATER </h>
+    <p class="v"><b>TES<br>PHOTOS</b></p>
+    <button type="button" class="bt" onclick="opn3">love💕</button>
     <button type="button" class="bt" onclick="opn3()">ForEver💝</button>
   </div>
 </div>
 <div class="msg4" id="msg4">
   <textarea name="sms" class="sms" id="sms" cols="30" rows="10"></textarea>
-  <button type="button" class="bt" onclick="opn4()">Envoyer et fermer</button>
+  <button type="button" class="bt" onclick="send()">Envoyer</button>
+  <button type="button" class="bt" onclick="opn4()">FERMER</button>
 </div>
 <div class="vide">
     <b>
@@ -151,13 +175,28 @@ function vol(){
 <div class="fin">
   <div class="bnj">
     <marquee behavior="slide" direction="up">
-    <img src="bnj3p.jpg" class="bnj3p" alt="bnj3p">
+    <img src="bnj3p.jpg" onclick="galerie()" class="bnj3p" alt="bnj3p">
     </marquee>
   </div>
   <div class="mdz" onclick="webm()">
     <marquee behavior="slide" direction="down">
     <img src="meduze_1.jpg" class="bnj3p" alt="mdz1" onclick="webm()">
     </marquee>
+  </div>
+</div>
+
+<div class="gal" id="gal">
+  <div class="ph">
+    <img src="bnj1p.jpg" alt="bn1" class="photo">
+  </div>
+  <div class="ph">
+    <img src="bnj.jpg" alt="bn2" class="photo">
+  </div>
+  <div class="ph">
+    <img src="bnj5p.jpg" alt="bn3" class="photo">
+  </div>
+  <div class="ph">
+    <img src="bnj4p.jpg" alt="bn4" class="photo">
   </div>
 </div>
 
