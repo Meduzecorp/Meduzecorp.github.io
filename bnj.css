@@ -2,15 +2,33 @@ div.cnt{
   display: block;
 }
 div.box3 {
-  display: block;
   width: 100%;
   background-image: url(bnj.jpg);
   text-shadow: 2px 1px 3px black;
   color: white;
-  border: 2px double skyblue;
+  border: 2px double deeppink;
   box-shadow: 0 0 5px aliceblue;
-  margin: 5px;
-  padding: 20px;
+  margin-left: -3px;
+}
+header{ 
+  align-items: center; text-align: center;
+  color: white;
+  font: 15pt;
+  border: 2px deeppink solid;
+  border-bottom: none;
+  text-shadow: 0 0 3px deepskyblue;
+  background-image: linear-gradient(to right, white,transparent,white)
+}
+footer{
+  position: relative;
+  left: 0; right: 0;
+  align-items: center; text-align: center;
+  color: white;
+  font: 15pt;
+  border: 3px groove deeppink;
+  border-top: none;
+  text-shadow: 0 0 3px deepskyblue;
+  background-image: linear-gradient(to right,transparent, darkblue,transparent,darkcyan,transparent)
 }
 div.btn{
   display: flex;
@@ -62,6 +80,10 @@ p.v{
   color: lightblue;
   font-size: 10pt;
 }
+p.btn{
+  display: flex;
+  justify-content: space-between;
+}
 div.haut{
   width: 100%;
   position: fixed;
@@ -81,30 +103,31 @@ div.vide{
 div.msg1, div.msg2, div.msg3{
   display: none;
   position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 599;
+  top: 15%; right: 5%;
+  left: 5%;
   color: floralwhite;
   background-image: url("bnj.jpg");
-  padding: 10px;
+  padding: 5px;
+  padding-bottom: 0px;
   box-shadow: 1px 5px 10px darkblue ;
 }
 div.msg4{ 
   text-align: center;
-  align-items: center;
   color: whitesmoke;
   display: none;
   position: fixed;
-  bottom: 28%;
-  right: 10%;
+  top: 30%;
+  right: 10%; left: 10%;
   color: floralwhite;
-  background-color: white;
-  padding: 03%;
+  background-image: linear-gradient(to left,transparent,darkblue,transparent);
+  padding: 1%;
+  margin:0;
   box-shadow: 1px 5px 10px darkblue ;
   animation: growShrink 20s infinite
 }
 textarea.sms{
+  margin: 0;
+  margin-left: -3%;
   color: whitesmoke;
   width: 105%;
   text-shadow: 0 0px 10px black;
@@ -219,6 +242,7 @@ button.bt{
   font-size: 13pt;
   font-weight: bold;
   box-shadow: 0 0 4px white;
+  flex: 1;
 }
 img.stext{
   width: 260px;
