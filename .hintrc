@@ -10,6 +10,24 @@
           "rotate"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "marquee": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
     ]
   }
 }
