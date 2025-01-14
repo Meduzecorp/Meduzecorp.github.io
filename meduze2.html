@@ -75,20 +75,15 @@ function retour(){
 }
 function rech(){
   var Nm = document.getElementById('nom');
-  var pic = document.getElementById('me');
   var pic0 = document.getElementById('pic0');
   var leg =document.getElementById('mdz');
   if(Nm.value=='Steven'){
-    pic.style.display='block';
-    pic0.style.display='none';
-    pic.style.marginLeft='30%';
-    leg.textContent='STEVEN KAT'
+    pic0.src='me.jpg';
+    leg.textContent='STEVEN KAT';
   }else{
-    pic.style.display='none';
-    pic0.style.display='block';
-    pic0.style.marginLeft='30%';
-    leg.textContent='UserMDZ#'
-  }
+    leg.textContent='UserMDZ#';
+    pic0.src='pic0.jpg'
+    }
 }
 function testrc(){
   var Nm = document.getElementById('nom');
@@ -140,7 +135,7 @@ function vpn(){
 
 <body class="meduze">
   <div id="haut" class="haut">
-  <h>MeduzeCorp a besoin des gens comme vous</h>
+  <h>MeduzeCorp [\] NetFinder1</h>
   </div>  
 <div class="vide">
   <h3>•</h3>
@@ -222,7 +217,6 @@ function vpn(){
         <b id="mdz">$ BADGE_MDZ-C</b>
       </legend>
       <div class="photo" id="photo">
-        <img src="me.jpg" id="me" alt="me" class="me">
         <img src="pic0.jpg" id="pic0" alt="pic0" class="pic0">
       </div>
       <div class="error" onclick="testrc()" id="error">
@@ -262,8 +256,8 @@ function vpn(){
     </div>
     <div class="detail" id="detail">
       <p class="det"><b>MEDUZE_CORP est un group de développeurs généralement africains,<br>
-        Créé par Steven Kat 2024, <br>
-        MEDUZE_CORP recrute encore et à <br>
+        Créé par Steven Kat 2024, <br><br> <br>
+        MEDUZE_CORP recrute encore et a <br>
         surtout besoin du financement pour <br>
         aller de l'avant</b></p>
     </div>
