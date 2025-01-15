@@ -233,6 +233,28 @@ div.hmdz{
   right: 6%;
   background-color: dodgerblue;
 }
+div.design{
+  font-size: 10pt;
+  position: fixed;
+  right: 7%;left: 7%;
+  line-height: 200%;
+  background-color: transparent;
+  bottom: 1%;
+  text-align: center;
+}
+p.bull1{
+  background-image: linear-gradient(to bottom, skyblue, darkblue);
+  border: 2px double skyblue;
+  border-radius: 10px 10px 10px 10px;
+}
+p.bull2{
+  background-image: linear-gradient(to bottom, darkblue,blue, skyblue);
+  margin-right: 15%;
+  margin-left: 15%;
+  border: 2px solid lightblue;
+  border-radius: 10px 10px 10px 10px;
+  border-top: 5px deepskyblue;
+}
 fieldset.mdz{
   text-align: right;
   position: relative;
